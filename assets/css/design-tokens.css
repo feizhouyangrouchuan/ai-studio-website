@@ -1,0 +1,214 @@
+/**
+ * Design Tokens - AI 创新工作室官网
+ * 
+ * 设计系统变量，用于保持视觉一致性
+ * 使用方法：var(--token-name)
+ */
+
+:root {
+    /* ===========================
+       颜色系统
+       =========================== */
+    
+    /* 主色调 */
+    --color-primary: #667eea;
+    --color-primary-dark: #5a6fd6;
+    --color-primary-light: #7c8ef0;
+    
+    /* 辅助色 */
+    --color-secondary: #764ba2;
+    --color-secondary-dark: #6a4190;
+    --color-secondary-light: #8b5fb5;
+    
+    /* 渐变色 */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-primary-dark: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+    
+    /* 文字颜色 - 优化对比度 */
+    --color-text-primary: #1a1a2e;      /* 标题，对比度 15.5:1 */
+    --color-text-secondary: #4a4a68;    /* 正文，对比度 7.2:1 */
+    --color-text-tertiary: #6b6b8a;     /* 辅助文字，对比度 4.6:1 */
+    --color-text-inverse: #ffffff;      /* 深色背景上的文字 */
+    --color-text-link: #667eea;         /* 链接颜色 */
+    --color-text-link-hover: #5a6fd6;   /* 链接悬停 */
+    
+    /* 背景颜色 */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #fafafa;
+    --color-bg-tertiary: #f0f0f5;
+    --color-bg-dark: #1a1a2e;
+    
+    /* 边框颜色 */
+    --color-border-light: #e0e0e5;
+    --color-border-medium: #c0c0cc;
+    --color-border-dark: #9090a0;
+    
+    /* 功能色 */
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    --color-info: #3b82f6;
+    
+    /* ===========================
+       排版系统
+       =========================== */
+    
+    /* 字体栈 */
+    --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    
+    /* 字体大小 */
+    --text-xs: 0.75rem;    /* 12px */
+    --text-sm: 0.875rem;   /* 14px */
+    --text-base: 1rem;     /* 16px */
+    --text-lg: 1.125rem;   /* 18px */
+    --text-xl: 1.25rem;    /* 20px */
+    --text-2xl: 1.5rem;    /* 24px */
+    --text-3xl: 1.875rem;  /* 30px */
+    --text-4xl: 2.25rem;   /* 36px */
+    --text-5xl: 3rem;      /* 48px */
+    
+    /* 行高 */
+    --leading-none: 1;
+    --leading-tight: 1.25;
+    --leading-normal: 1.6;
+    --leading-relaxed: 1.75;
+    
+    /* 字重 */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    /* ===========================
+       间距系统
+       =========================== */
+    
+    --space-0: 0;
+    --space-1: 0.25rem;    /* 4px */
+    --space-2: 0.5rem;     /* 8px */
+    --space-3: 0.75rem;    /* 12px */
+    --space-4: 1rem;       /* 16px */
+    --space-5: 1.25rem;    /* 20px */
+    --space-6: 1.5rem;     /* 24px */
+    --space-8: 2rem;       /* 32px */
+    --space-10: 2.5rem;    /* 40px */
+    --space-12: 3rem;      /* 48px */
+    --space-16: 4rem;      /* 64px */
+    --space-20: 5rem;      /* 80px */
+    --space-24: 6rem;      /* 96px */
+    
+    /* ===========================
+       圆角系统
+       =========================== */
+    
+    --radius-none: 0;
+    --radius-sm: 0.25rem;   /* 4px */
+    --radius-md: 0.5rem;    /* 8px */
+    --radius-lg: 0.75rem;   /* 12px */
+    --radius-xl: 1rem;      /* 16px */
+    --radius-2xl: 1.5rem;   /* 24px */
+    --radius-full: 9999px;  /* 圆形 */
+    
+    /* ===========================
+       阴影系统
+       =========================== */
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    --shadow-colored: 0 10px 30px rgba(102, 126, 234, 0.4);
+    
+    /* ===========================
+       动效系统
+       =========================== */
+    
+    /* 过渡时间 */
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+    
+    /* 缓动函数 */
+    --ease-linear: linear;
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* ===========================
+       断点系统
+       =========================== */
+    
+    /* 使用 min-width 媒体查询 */
+    --breakpoint-sm: 640px;   /* 小屏手机 */
+    --breakpoint-md: 768px;   /* 平板 */
+    --breakpoint-lg: 1024px;  /* 小屏电脑 */
+    --breakpoint-xl: 1280px;  /* 标准电脑 */
+    --breakpoint-2xl: 1536px; /* 大屏 */
+    
+    /* ===========================
+       Z-index 层级
+       =========================== */
+    
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal-backdrop: 400;
+    --z-modal: 500;
+    --z-popover: 600;
+    --z-tooltip: 700;
+    --z-toast: 800;
+    
+    /* ===========================
+       无障碍
+       =========================== */
+    
+    /* 焦点环 */
+    --focus-ring: 0 0 0 3px rgba(102, 126, 234, 0.5);
+    --focus-ring-offset: 2px;
+    
+    /* 减少动画 */
+    --motion-reduce: false;
+}
+
+/* ===========================
+   深色模式支持（可选）
+   =========================== */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text-primary: #f0f0f5;
+        --color-text-secondary: #c0c0cc;
+        --color-text-tertiary: #9090a0;
+        
+        --color-bg-primary: #1a1a2e;
+        --color-bg-secondary: #252540;
+        --color-bg-tertiary: #303050;
+        
+        --color-border-light: #404055;
+        --color-border-medium: #505065;
+        --color-border-dark: #606075;
+    }
+}
+
+/* ===========================
+   减少动画偏好
+   =========================== */
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --motion-reduce: true;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

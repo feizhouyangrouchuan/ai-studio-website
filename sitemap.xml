@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- 一人公司 AI 工作室官网 Sitemap -->
+  <!-- 单页网站，所有模块在同一页面，使用锚点导航 -->
+  
+  <url>
+    <loc>https://ai-studio.com/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!-- 页面主要模块锚点 -->
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai-studio.com/#home"/>
+  </url>
+  
+  <!-- 首页模块锚点 -->
+  <url>
+    <loc>https://ai-studio.com/#home</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 服务模块锚点 -->
+  <url>
+    <loc>https://ai-studio.com/#services</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 关于我们模块锚点 -->
+  <url>
+    <loc>https://ai-studio.com/#about</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 联系我们模块锚点 -->
+  <url>
+    <loc>https://ai-studio.com/#contact</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
