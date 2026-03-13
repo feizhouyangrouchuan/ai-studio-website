@@ -1,0 +1,122 @@
+# 官网前端架构 v2 - 语义化 HTML + 响应式设计
+
+```mermaid
+graph TD
+    subgraph "用户层"
+        A[桌面浏览器]
+        B[移动浏览器]
+        C[平板设备]
+        D[无障碍辅助技术]
+    end
+
+    subgraph "表现层 - dist-v2/"
+        E[index.html<br/>语义化 HTML5]
+        F[assets/css/<br/>style.css<br/>design-tokens.css]
+        G[assets/js/<br/>main.js<br/>components/]
+        H[assets/images/<br/>优化后的图片]
+    end
+
+    subgraph "核心模块"
+        I[导航组件<br/>Navigation]
+        J[英雄区<br/>Hero Section]
+        K[服务展示<br/>Services Grid]
+        L[关于我们<br/>About Section]
+        M[联系方式<br/>Contact Form]
+        N[页脚<br/>Footer]
+    end
+
+    subgraph "设计系统"
+        O[Design Tokens<br/>CSS Variables]
+        P[色彩系统]
+        Q[排版系统]
+        R[间距系统]
+        S[响应式断点]
+    end
+
+    subgraph "性能优化"
+        T[资源预加载<br/>Preload]
+        U[图片懒加载<br/>Lazy Load]
+        V[代码分割<br/>Code Splitting]
+        W[缓存策略<br/>Cache]
+    end
+
+    subgraph "无障碍 WCAG AA"
+        X[跳过链接<br/>Skip Link]
+        Y[ARIA 标签<br/>ARIA Labels]
+        Z[键盘导航<br/>Keyboard Nav]
+        AA[焦点管理<br/>Focus Management]
+        AB[对比度检查<br/>Contrast]
+    end
+
+    A & B & C & D --> E
+    E --> F & G & H
+    E --> I & J & K & L & M & N
+    F --> O
+    O --> P & Q & R & S
+    E --> T & U & V & W
+    E --> X & Y & Z & AA & AB
+
+    style E fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#764ba2,stroke:#333,stroke-width:2px,color:#fff
+    style G fill:#764ba2,stroke:#333,stroke-width:2px,color:#fff
+    style O fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
+    style T fill:#f59e0b,stroke:#333,stroke-width:2px,color:#fff
+    style X fill:#3b82f6,stroke:#333,stroke-width:2px,color:#fff
+```
+
+## 技术栈
+
+| 层级 | 技术 | 说明 |
+|------|------|------|
+| HTML | HTML5 | 语义化标签，无障碍优先 |
+| CSS | CSS3 + Variables | 设计系统驱动，响应式 |
+| JS | Vanilla ES6+ | 轻量级，无框架依赖 |
+| 构建 | 手动优化 | 保持简单，易于维护 |
+
+## 目录结构
+
+```
+dist-v2/
+├── index.html          # 主入口，语义化 HTML
+├── assets/
+│   ├── css/
+│   │   ├── design-tokens.css   # 设计系统变量
+│   │   ├── style.css           # 主样式表
+│   │   └── style.min.css       # 生产压缩版
+│   ├── js/
+│   │   ├── main.js             # 主逻辑
+│   │   ├── components/         # 组件模块
+│   │   │   ├── navigation.js   # 导航组件
+│   │   │   ├── mobile-menu.js  # 移动菜单
+│   │   │   └── contact-form.js # 联系表单
+│   │   └── utils/              # 工具函数
+│   │       ├── a11y.js         # 无障碍工具
+│   │       └── performance.js  # 性能优化
+│   └── images/
+│       ├── logo.svg
+│       ├── hero-bg.webp
+│       └── icons/
+└── README.md
+```
+
+## 性能目标 (Lighthouse)
+
+- Performance: ≥ 95
+- Accessibility: ≥ 98
+- Best Practices: ≥ 98
+- SEO: ≥ 95
+
+## 无障碍要求 (WCAG 2.1 AA)
+
+- 所有交互元素可键盘访问
+- 焦点指示器清晰可见
+- 颜色对比度 ≥ 4.5:1 (文字)
+- 所有图片有 alt 文本
+- 表单有相关 label
+- 页面结构语义化
+
+## 响应式断点
+
+- Mobile: < 640px
+- Tablet: 640px - 1023px
+- Desktop: ≥ 1024px
