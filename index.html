@@ -3,181 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- SEO Meta Tags -->
-    <title>用 AI 重塑你的业务未来 | AI 应用开发与智能解决方案</title>
-    <meta name="description" content="专注 AI 应用开发与智能解决方案，帮助中小企业和个人创业者快速拥抱人工智能时代。提供 AI 应用定制开发、Agent 工作流搭建、技术咨询与培训、现有系统集成 AI 能力。从概念到落地，全程陪伴。">
-    <meta name="keywords" content="AI 应用开发，AI Agent,智能解决方案，自动化工作流，AI 咨询，系统集成，RAG 系统，自然语言处理，计算机视觉，AI 培训">
-    <meta name="author" content="一人公司 AI 工作室">
+    <meta name="description" content="帮助一人公司和小型团队用 AI 提升 3 倍效率。提供 AI 工作流咨询、定制化集成、技能培训和长期顾问服务。免费 consultation，48 小时快速交付。">
+    <meta name="keywords" content="AI 工作流优化，一人公司 AI 工具，小型团队效率提升，AI 自动化咨询，企业 AI 培训">
+    <meta name="author" content="AI 创新工作室">
     <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Social Media -->
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="用 AI 重塑你的业务未来 | AI 应用开发与智能解决方案">
-    <meta property="og:description" content="专注 AI 应用开发与智能解决方案，帮助中小企业和个人创业者快速拥抱人工智能时代。从概念到落地，全程陪伴。">
+    <meta property="og:title" content="AI 创新工作室 | 一人公司和小团队的 AI 效率专家">
+    <meta property="og:description" content="帮助一人公司和小型团队用 AI 提升 3 倍效率。提供 AI 工作流咨询、定制化集成、技能培训和长期顾问服务。">
     <meta property="og:locale" content="zh_CN">
-    <meta property="og:url" content="https://ai-studio.com">
-    <meta property="og:site_name" content="一人公司 AI 工作室">
-    <meta property="og:image" content="https://ai-studio.com/assets/og-image.png">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="用 AI 重塑你的业务未来 | AI 应用开发与智能解决方案">
-    <meta name="twitter:description" content="专注 AI 应用开发与智能解决方案，帮助中小企业和个人创业者快速拥抱人工智能时代。">
-    <meta name="twitter:image" content="https://ai-studio.com/assets/og-image.png">
+    <!-- Preconnect to Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/design-tokens-v2.css">
+    <link rel="stylesheet" href="assets/css/style-v2.css">
     
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="assets/css/style.min.css" as="style">
-    <link rel="preload" href="assets/js/main.min.js" as="script">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
-    
-    <!-- Canonical URL (update after deployment) -->
-    <link rel="canonical" href="https://ai-studio.com">
-    
-    <!-- Sitemap -->
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    <title>AI 创新工作室 - 让 AI 为你工作，而不是替你工作</title>
 </head>
 <body>
-    <!-- 无障碍跳过链接 -->
-    <a href="#main-content" class="skip-link">跳到主要内容</a>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">跳转到主要内容</a>
     
-    <!-- 导航栏 -->
-    <nav class="navbar" role="navigation" aria-label="主导航">
+    <!-- Navigation -->
+    <header class="navbar" role="banner">
         <div class="container">
-            <a href="#home" class="logo" aria-label="返回首页">🤖 AI 创新工作室</a>
+            <a href="/" class="logo" aria-label="AI 创新工作室首页">
+                AI 创新工作室
+            </a>
             
-            <!-- 汉堡菜单按钮 -->
-            <button class="hamburger-menu" 
-                    aria-label="切换导航菜单"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-            
-            <!-- 桌面端导航 -->
-            <ul class="nav-links">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#services">服务</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#contact">联系</a></li>
-            </ul>
+            <nav role="navigation" aria-label="主导航">
+                <ul class="nav-links">
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact" class="btn btn-primary">免费咨询</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
         </div>
         
-        <!-- 移动端菜单 -->
-        <div class="mobile-menu" id="mobile-menu">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu" hidden>
             <ul class="mobile-nav-links">
-                <li><a href="#home" class="mobile-nav-link">首页</a></li>
-                <li><a href="#services" class="mobile-nav-link">服务</a></li>
-                <li><a href="#about" class="mobile-nav-link">关于</a></li>
-                <li><a href="#contact" class="mobile-nav-link">联系</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#faq">常见问题</a></li>
+                <li><a href="#contact" class="btn btn-primary">免费咨询</a></li>
             </ul>
         </div>
-    </nav>
-
-    <!-- 主页英雄区 -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>用 AI 驱动您的业务增长</h1>
-            <p>专业的 AI 开发与智能化解决方案，助力企业数字化转型</p>
-            <a href="#contact" class="cta-button">免费咨询</a>
-        </div>
-    </section>
-
-    <!-- 主要内容 -->
-    <main id="main-content">
-        <!-- 服务展示 -->
-        <section id="services" class="services">
+    </header>
+    
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
             <div class="container">
-                <h2>我们的服务</h2>
+                <div class="hero-content">
+                    <h1 id="hero-title">让 AI 为你工作，<span class="gradient-text">而不是替你工作</span></h1>
+                    
+                    <p class="hero-subtitle">
+                        我们帮助一人公司和小型团队用 AI 提升效率，<br>
+                        把时间留给真正重要的事——创意、战略和成长。
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-lg">免费 consultation</a>
+                        <a href="#cases" class="btn btn-secondary btn-lg">查看案例</a>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-gradient-orb hero-gradient-orb-1"></div>
+                    <div class="hero-gradient-orb hero-gradient-orb-2"></div>
+                    <div class="hero-gradient-orb hero-gradient-orb-3"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Value Proposition Section -->
+        <section class="value-prop" aria-labelledby="value-title">
+            <div class="container">
+                <h2 id="value-title" class="section-title">为什么选择我们？</h2>
+                
+                <div class="value-grid">
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🎯</div>
+                        <h3>精准落地</h3>
+                        <p>不卖概念，只给方案。每个 AI 工具都经过实战验证，确保在你的业务场景中真正可用。</p>
+                    </article>
+                    
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">⚡</div>
+                        <h3>快速见效</h3>
+                        <p>从咨询到落地，最快 48 小时看到效果。我们相信，好的工具应该立刻产生价值。</p>
+                    </article>
+                    
+                    <article class="value-card">
+                        <div class="value-icon" aria-hidden="true">🤝</div>
+                        <h3>长期陪伴</h3>
+                        <p>不是一次性交付，而是持续优化。随着你的业务成长，我们一起迭代 AI 工作流。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Social Proof / Stats Section -->
+        <section class="stats" aria-labelledby="stats-title">
+            <div class="container">
+                <h2 id="stats-title" class="visually-hidden">客户成果数据</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">50+</span>
+                        <span class="stat-label">一人公司完成数字化转型</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="300">300+</span>
+                        <span class="stat-label">小时/月 平均节省时间</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="95">95%</span>
+                        <span class="stat-label">客户满意度</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="48">48h</span>
+                        <span class="stat-label">平均方案交付时间</span>
+                    </div>
+                </div>
+                
+                <p class="stats-lead">他们已经用 AI 改变了工作方式</p>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section-title">我们的服务</h2>
+                
+                <p class="section-lead">
+                    从咨询到落地，我们提供全栈式 AI 赋能服务。<br>
+                    无论你想自动化某个流程，还是彻底重构工作方式，<br>
+                    我们都有对应的解决方案。
+                </p>
+                
+                <div class="services-uncertain-cta">
+                    <h3>不确定哪个服务适合你？</h3>
+                    <p>没关系，我们先从一次免费的 consultation 开始。<br>
+                    聊聊你的业务和痛点，我们会给你最合适的建议。</p>
+                    <a href="#contact" class="btn btn-secondary">预约免费咨询</a>
+                </div>
+                
                 <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">🚀</div>
-                        <h3>AI 应用开发</h3>
-                        <p>定制化 AI 应用开发，包括智能对话系统、自动化工作流、数据分析平台等</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">⚙️</div>
-                        <h3>AI 系统集成</h3>
-                        <p>将 AI 能力无缝集成到现有系统，提升业务效率和智能化水平</p>
-                    </div>
-                    <div class="service-card">
+                    <!-- Service 1 -->
+                    <article class="service-card" aria-labelledby="service-1-title">
                         <div class="service-icon" aria-hidden="true">🎯</div>
-                        <h3>智能体搭建</h3>
-                        <p>基于 OpenClaw 等框架，搭建专属 AI Agent，实现自动化任务处理</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon" aria-hidden="true">📊</div>
-                        <h3>技术咨询</h3>
-                        <p>AI 技术选型、架构设计、云迁移方案等专业咨询服务</p>
-                    </div>
+                        <h3 id="service-1-title">AI 工作流咨询</h3>
+                        <p>深度分析你的业务流程，找出最适合 AI 自动化的环节。我们会输出一份详细的转型路线图，包括工具推荐、实施步骤和预期效果。</p>
+                        
+                        <ul class="service-deliverables">
+                            <li>业务流程分析报告</li>
+                            <li>AI 工具推荐清单</li>
+                            <li>90 天实施路线图</li>
+                            <li>1 小时一对一解读 session</li>
+                        </ul>
+                        
+                        <div class="service-price">
+                            <span class="price-label">价格</span>
+                            <span class="price-amount">¥2,999 起</span>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-outline">立即咨询</a>
+                    </article>
+                    
+                    <!-- Service 2 -->
+                    <article class="service-card featured" aria-labelledby="service-2-title">
+                        <div class="service-badge">最受欢迎</div>
+                        <div class="service-icon" aria-hidden="true">⚙️</div>
+                        <h3 id="service-2-title">定制化 AI 集成</h3>
+                        <p>把你正在用的工具（Notion、飞书、企业微信等）和 AI 连接起来，打造专属的自动化工作流。告别手动复制粘贴，让数据在不同平台间自动流转。</p>
+                        
+                        <ul class="service-deliverables">
+                            <li>定制化集成方案</li>
+                            <li>API 配置和调试</li>
+                            <li>自动化工作流搭建</li>
+                            <li>使用培训和文档</li>
+                        </ul>
+                        
+                        <div class="service-price">
+                            <span class="price-label">价格</span>
+                            <span class="price-amount">¥8,999 起</span>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary">立即咨询</a>
+                    </article>
+                    
+                    <!-- Service 3 -->
+                    <article class="service-card" aria-labelledby="service-3-title">
+                        <div class="service-icon" aria-hidden="true">📚</div>
+                        <h3 id="service-3-title">AI 技能培训</h3>
+                        <p>为你和团队提供实战导向的 AI 培训。不是理论课，而是直接教你怎么用 AI 完成日常工作——写文案、做分析、处理数据、生成报告。</p>
+                        
+                        <ul class="service-deliverables">
+                            <li>定制化培训课程（2-4 小时）</li>
+                            <li>实战练习和案例</li>
+                            <li>培训录屏和资料</li>
+                            <li>30 天答疑支持</li>
+                        </ul>
+                        
+                        <div class="service-price">
+                            <span class="price-label">价格</span>
+                            <span class="price-amount">¥5,999/场</span>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-outline">立即咨询</a>
+                    </article>
+                    
+                    <!-- Service 4 -->
+                    <article class="service-card" aria-labelledby="service-4-title">
+                        <div class="service-icon" aria-hidden="true">🤝</div>
+                        <h3 id="service-4-title">长期顾问服务</h3>
+                        <p>成为你的 AI 外脑。每月定期沟通，帮你跟踪最新的 AI 工具和趋势，持续优化你的工作流，解答使用中遇到的问题。</p>
+                        
+                        <ul class="service-deliverables">
+                            <li>每月 2 次 1v1 沟通（每次 1 小时）</li>
+                            <li>新工具/新功能推荐</li>
+                            <li>工作流优化建议</li>
+                            <li>优先响应支持</li>
+                        </ul>
+                        
+                        <div class="service-price">
+                            <span class="price-label">价格</span>
+                            <span class="price-amount">¥3,999/月</span>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-outline">立即咨询</a>
+                    </article>
                 </div>
             </div>
         </section>
-
-        <!-- 关于我们 -->
-        <section id="about" class="about">
+        
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-title">
             <div class="container">
-                <h2>关于我们</h2>
                 <div class="about-content">
-                    <p>我们是一人公司 + AI Agent 团队组成的创新工作室，专注于为客户提供高质量的 AI 开发与智能化服务。</p>
-                    <p>凭借深厚的技术积累和丰富的实战经验，我们已成功帮助多家企业实现数字化转型，包括：</p>
-                    <ul class="features-list">
-                        <li>✅ 阿里云国际站架构迁移方案</li>
-                        <li>✅ OpenClaw AI Agent 系统搭建</li>
-                        <li>✅ 企业自动化工作流设计</li>
-                        <li>✅ 智能数据分析平台开发</li>
-                    </ul>
+                    <h2 id="about-title">关于 AI 创新工作室</h2>
+                    
+                    <div class="about-story">
+                        <h3>从一个人，到一群人的效率革命</h3>
+                        
+                        <p>
+                            2024 年，我们创始人还是一个典型的一人公司老板——每天工作 12 小时，80% 的时间花在重复性工作上：回复邮件、整理数据、写周报、做 PPT……
+                        </p>
+                        
+                        <p>
+                            直到有一天，他决定试试用 AI 来改变这一切。
+                        </p>
+                        
+                        <p>
+                            一开始只是小打小闹：用 AI 写邮件、生成会议纪要。但很快，他发现这不仅仅是"省时间"那么简单——当重复性工作被自动化后，他终于有时间思考真正重要的事：产品方向、客户关系、业务增长。
+                        </p>
+                        
+                        <p>
+                            6 个月后，他的工作效率提升了 3 倍，但工作时间却减少了一半。更重要的是，他找回了对工作的热情和掌控感。
+                        </p>
+                        
+                        <p>
+                            这个故事让我们意识到：AI 不应该是一个炫技的工具，而应该是每个人的"效率伙伴"。它不应该替代你，而应该让你成为更好的自己。
+                        </p>
+                        
+                        <p>
+                            于是，AI 创新工作室诞生了。
+                        </p>
+                        
+                        <p>
+                            我们的使命很简单：帮助更多一人公司和小团队，用 AI 拿回时间的主动权。让技术为人服务，而不是人为技术服务。
+                        </p>
+                        
+                        <p>
+                            今天，我们已经帮助 50+ 客户完成了数字化转型。他们中有独立开发者、咨询顾问、内容创作者、电商店主……但都有一个共同点：他们不再被重复性工作束缚，而是把时间花在了真正创造价值的事情上。
+                        </p>
+                        
+                        <p>
+                            <strong>这，就是我们存在的意义。</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="about-values">
+                        <h3>我们相信什么？</h3>
+                        
+                        <div class="value-item">
+                            <h4>🎯 实用主义</h4>
+                            <p>不追热点，不卖焦虑。只推荐经过验证、真正能解决问题的工具和方法。</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <h4>❤️ 以人为本</h4>
+                            <p>AI 是工具，人才是核心。我们关注的不只是"能自动化什么"，更是"能解放什么"。</p>
+                        </div>
+                        
+                        <div class="value-item">
+                            <h4>🌱 长期主义</h4>
+                            <p>不追求一次性交付，而是建立长期的合作关系。你的成功，才是我们的成功。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">服务客户</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">300+</span>
+                            <span class="stat-label">小时/月 平均节省</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">客户满意度</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- 联系方式 -->
-        <section id="contact" class="contact">
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="faq" aria-labelledby="faq-title">
             <div class="container">
-                <h2>联系我们</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p>📧 邮箱：contact@ai-studio.com</p>
-                        <p>💬 微信：AI_Studio_Assistant</p>
-                        <p>🌐 工作时间：周一至周五 9:00-18:00</p>
+                <h2 id="faq-title" class="section-title">常见问题</h2>
+                
+                <div class="faq-list" role="list">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span>我们没有技术背景，能用好 AI 吗？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer" hidden>
+                            <p>当然可以！我们的服务就是为零技术背景的客户设计的。我们会选择最简单、最直观的工具，提供详细的使用文档和培训。事实上，我们 80% 的客户都没有技术背景。</p>
+                        </div>
                     </div>
-                    <form class="contact-form" id="contactForm" aria-label="联系表单">
-                        <div class="form-group">
-                            <label for="name" class="visually-hidden">您的姓名</label>
-                            <input type="text" id="name" name="name" placeholder="您的姓名" required aria-required="true">
+                    
+                    <!-- FAQ 2 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span>多久能看到效果？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer" hidden>
+                            <p>根据服务类型不同：</p>
+                            <ul>
+                                <li><strong>工作流咨询：</strong>1-2 周内完成分析和方案交付</li>
+                                <li><strong>AI 集成：</strong>2-4 周完成搭建和测试</li>
+                                <li><strong>技能培训：</strong>培训当天就能上手实践</li>
+                            </ul>
+                            <p>大多数客户在 48 小时内就能看到初步效果。</p>
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="visually-hidden">您的邮箱</label>
-                            <input type="email" id="email" name="email" placeholder="您的邮箱" required aria-required="true">
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span>服务完成后还有支持吗？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer" hidden>
+                            <p>有的！我们提供 30 天的免费售后支持，包括使用问题解答、小调整和优化建议。如果需要长期支持，也可以选择我们的月度顾问服务。</p>
                         </div>
-                        <div class="form-group">
-                            <label for="message" class="visually-hidden">请描述您的需求</label>
-                            <textarea id="message" name="message" placeholder="请描述您的需求" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <!-- FAQ 4 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span>如何开始第一次咨询？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer" hidden>
+                            <p>很简单！点击下方"立即预约"按钮，填写一个简单的表单，我们会和你确认时间。第一次 consultation 是免费的 30 分钟，我们会一起梳理你的业务，找到最适合的 AI 解决方案。</p>
                         </div>
-                        <button type="submit" class="submit-button" aria-label="发送消息">发送消息</button>
-                        <p class="form-privacy">🔒 您的信息将被保密，仅用于与您联系</p>
-                    </form>
+                    </div>
+                    
+                    <!-- FAQ 5 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+                            <span>AI 会不会取代我的工作？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-5" class="faq-answer" hidden>
+                            <p>这是最常见的担忧，但我们的经验恰恰相反。AI 不会取代你，而是取代你工作中那些重复、枯燥的部分。这意味着你可以把更多精力投入到需要创造力、判断力和人情味的工作中——这些才是 AI 无法替代的。</p>
+                            <p>我们的客户反馈，使用 AI 后他们反而更热爱工作了，因为他们终于有时间做真正有意义的事。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 6 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+                            <span>如果效果不理想怎么办？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-6" class="faq-answer" hidden>
+                            <p>我们提供 30 天效果保障。如果在服务完成后 30 天内，你觉得没有达到预期效果，我们会免费重新调整方案，直到你满意为止。</p>
+                            <p>当然，这种情况很少发生——我们在开始每个项目前都会充分沟通，确保方案匹配你的实际需求。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 7 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+                            <span>数据安全问题怎么保障？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-7" class="faq-answer" hidden>
+                            <p>数据安全是我们的首要考虑：</p>
+                            <ul>
+                                <li><strong>最小化原则：</strong>只接入必要的工具和数据</li>
+                                <li><strong>本地优先：</strong>优先选择支持本地部署的方案</li>
+                                <li><strong>权限管控：</strong>严格限制 AI 工具的访问权限</li>
+                                <li><strong>定期审计：</strong>每季度审查一次数据流向</li>
+                            </ul>
+                            <p>如果你有特殊的安全要求（如金融、医疗行业），我们可以提供定制化的安全方案。</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ 8 -->
+                    <div class="faq-item" role="listitem">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+                            <span>费用可以分期吗？</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div id="faq-answer-8" class="faq-answer" hidden>
+                            <p>可以的。对于 ¥5,000 以上的服务，我们支持 2-3 期免息分期。具体方案可以在 consultation 时详细沟通。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section id="contact" class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">准备好让你的业务更高效了吗？</h2>
+                    
+                    <p class="cta-description">
+                        预约一次免费的 30 分钟 consultation，<br>
+                        我们会一起梳理你的业务，找到最适合的 AI 解决方案。
+                    </p>
+                    
+                    <a href="mailto:hello@ai-studio.com" class="btn btn-primary btn-lg">立即预约</a>
+                    
+                    <p class="cta-note">无推销，纯交流。即使不合作，也能获得有价值的建议。</p>
+                    
+                    <div class="contact-info">
+                        <h3>想聊聊你的项目？</h3>
+                        <div class="contact-details">
+                            <p>📧 邮箱：hello@ai-studio.com</p>
+                            <p>💬 微信：AI_Studio_Consulting</p>
+                            <p>📍 地址：上海市（支持全国远程服务）</p>
+                        </div>
+                        <p class="contact-hours"><strong>工作时间：</strong>周一至周五 9:00 - 18:00，周末预约制</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- 页脚 -->
-    <footer class="footer">
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2026 AI 创新工作室。All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">AI 创新工作室</span>
+                    <p>让 AI 为你工作，而不是替你工作</p>
+                    <p class="footer-tagline">帮助一人公司和小团队用 AI 拿回时间的主动权</p>
+                </div>
+                
+                <nav class="footer-links" aria-label="页脚导航">
+                    <a href="#services">服务</a>
+                    <a href="#about">关于我们</a>
+                    <a href="#faq">常见问题</a>
+                    <a href="mailto:contact@ai-studio.com">联系我们</a>
+                </nav>
+                
+                <div class="footer-social">
+                    <a href="#" aria-label="微信公众号" class="social-link">微信</a>
+                    <a href="#" aria-label="小红书" class="social-link">小红书</a>
+                    <a href="#" aria-label="知乎" class="social-link">知乎</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI 创新工作室。All rights reserved.</p>
+            </div>
         </div>
     </footer>
-
-    <!-- JavaScript (defer for performance) -->
-    <script src="assets/js/main.min.js" defer></script>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main-v2.js" defer></script>
 </body>
 </html>
